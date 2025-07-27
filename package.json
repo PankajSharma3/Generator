@@ -1,0 +1,23 @@
+{
+  "name": "component-generator-platform",
+  "version": "1.0.0",
+  "description": "AI-driven component generator platform",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd backend && npm run dev",
+    "client:dev": "cd frontend && npm run dev",
+    "server:install": "cd backend && npm install",
+    "client:install": "cd frontend && npm install",
+    "install:all": "npm install && npm run server:install && npm run client:install",
+    "build": "cd frontend && npm run build",
+    "server:start": "cd backend && npm start",
+    "start": "npm run server:start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["react", "ai", "component-generator", "micro-frontend"],
+  "author": "",
+  "license": "MIT"
+}
